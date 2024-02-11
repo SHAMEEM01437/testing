@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input file get</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="input_container">
+    <span class="file_name" id="file_name" >File name</span>
+    <label for="input_file">
+        Upload file here 
+    </label>
+    <input type="file" id="input_file" hidden onchange="inputChange()">
+  </div>
+
+
+
+  <script>
+    function inputChange(){
+        const iniput_field = document.getElementById('input_file');
+        const displayInput = document.getElementById('file_name');
+        var file_name = iniput_field.files[0].name;
+        displayInput.textContent = file_name
+    }
+  </script>
+
+</body>
+</html>

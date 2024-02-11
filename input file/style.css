@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #007FFF;
+    height: 100vh;
+}
+
+.input_container {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.input_container label{
+    border:1px dashed #fff;
+    font-size:34px;
+    display: block;
+    padding: 60px;
+    border-radius:10px;
+    width: 100%;
+    color:#fff;
+    text-align: center;
+}
+.file_name{
+    font-size:25px;
+    color:#fff;
+    margin-bottom:20px;
+}
